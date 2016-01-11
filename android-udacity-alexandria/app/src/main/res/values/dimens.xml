@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <integer name="ean_size">13</integer>
+    <integer name="ean_width">8</integer>
+    <dimen name="head_line">24sp</dimen>
+
+    <!-- Standard text sizes, per the Android Design guidelines.  -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+    <dimen name="default_content_padding">20dp</dimen>
+    <dimen name="listPreferredItemPaddingStart">16dp</dimen>
+    <dimen name="listPreferredItemPaddingEnd">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="nav_drawer_divider_height">0dp</dimen>
+    <dimen name="search_button_margintop">5dp</dimen>
+    <dimen name="search_text_margin">10dp</dimen>
+    <dimen name="book_list_margin_start">0dp</dimen>
+    <dimen name="book_list_item_padding">6dp</dimen>
+    <dimen name="book_list_item_cover_marginend">6dp</dimen>
+    <dimen name="book_list_item_title_marginend">10dp</dimen>
+    <dimen name="booklist_item_subtitle_height">26dp</dimen>
+    <dimen name="auto_adjust_zero_dp">0dp</dimen>
+    <dimen name="book_title_margin">10dp</dimen>
+    <dimen name="book_cover_margintop">15dp</dimen>
+    <dimen name="book_subtitle_marginstart">20dp</dimen>
+    <dimen name="book_subtitle_marginend">10dp</dimen>
+    <dimen name="book_desc_margin">10dp</dimen>
+    <dimen name="book_footer_padding">10dp</dimen>
+    <dimen name="delete_button_marginend">10dp</dimen>
+    <dimen name="delete_button_marginbottom">5dp</dimen>
+    <dimen name="book_footer_margintop">10dp</dimen>
+    <dimen name="add_book_title_margintop">25dp</dimen>
+    <dimen name="add_book_subtitle_margintop">10dp</dimen>
+    <dimen name="add_book_authors_margintop">20dp</dimen>
+    <dimen name="add_book_categories_margintop">20dp</dimen>
+    <dimen name="land_add_book_margintop">10dp</dimen>
+    <dimen name="land_add_book_authors_marginstart">25dp</dimen>
+    <dimen name="land_add_book_subtitle_margintop">10dp</dimen>
+    <dimen name="land_book_cover_minheight">20dip</dimen>
+    <dimen name="land_book_cover_minwidth">20dip</dimen>
+    <dimen name="land_book_title_margintop">10dp</dimen>
+    <dimen name="land_book_title_marginstart">10dp</dimen>
+    <dimen name="land_book_title_marginend">10dp</dimen>
+    <dimen name="land_add_book_scan_marginstart">23dp</dimen>
+    <dimen name="land_add_book_ean_margintop">30dp</dimen>
+    <dimen name="land_add_book_ean_marginstart">40dp</dimen>
+</resources>

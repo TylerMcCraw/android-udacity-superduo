@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AddBook">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_adjust_zero_dp"
+        android:fillViewport="false"
+        android:layout_weight="1"
+        android:padding="@dimen/default_content_padding">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                android:id="@+id/fullBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/book_title_margin"
+                android:textSize="@dimen/head_line"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                tools:text="Book Title"/>
+
+            <ImageView
+                android:id="@+id/fullBookCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fullBookTitle"
+                android:layout_alignStart="@+id/fullBookTitle"
+                android:layout_below="@+id/fullBookTitle"
+                android:layout_marginTop="@dimen/book_cover_margintop"
+                android:contentDescription="@string/book_cover"
+                tools:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/fullBookSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fullBookCover"
+                android:layout_toRightOf="@+id/fullBookCover"
+                android:layout_toEndOf="@+id/fullBookCover"
+                android:layout_marginLeft="@dimen/book_subtitle_marginstart"
+                android:layout_marginStart="@dimen/book_subtitle_marginstart"
+                android:layout_marginRight="@dimen/book_subtitle_marginend"
+                android:layout_marginEnd="@dimen/book_subtitle_marginend"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_medium"
+                tools:text="Sub Title: A story about a story"/>
+
+            <TextView
+                android:id="@+id/fullBookDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/book_desc_margin"
+                android:layout_below="@+id/fullBookCover"
+                android:ellipsize="end"
+                tools:text="Once upon a time, there was a story. And in that story, there was ..."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullBookDesc"
+                android:layout_marginTop="@dimen/book_footer_margintop"
+                android:orientation="horizontal"
+                android:padding="@dimen/book_footer_padding">
+
+                <TextView
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    tools:text="Adventure | Action"/>
+
+                <TextView
+                    android:id="@+id/authors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="end|top"
+                    tools:text="Reto Meier"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/fullBookTitle"
+                android:layout_alignEnd="@+id/fullBookTitle"
+                android:contentDescription="@string/back_button"
+                android:onClick="goBack"
+                android:src="@drawable/ic_action_undo"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableLeft="@drawable/ic_action_discard"
+            android:drawableStart="@drawable/ic_action_discard"
+            android:layout_marginRight="@dimen/delete_button_marginend"
+            android:layout_marginEnd="@dimen/delete_button_marginend"
+            android:layout_marginBottom="@dimen/delete_button_marginbottom" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="start|center_vertical"
+    tools:context=".fragments.AddBook">
+
+    <EditText
+        android:id="@+id/ean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/land_add_book_ean_margintop"
+        android:layout_marginLeft="@dimen/land_add_book_ean_marginstart"
+        android:layout_marginStart="@dimen/land_add_book_ean_marginstart"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:minEms="@integer/ean_width"
+        android:saveEnabled="true"
+        android:textIsSelectable="false"
+        android:maxLength="@integer/ean_size"
+        android:maxLines="1"
+        android:hint="@string/input_hint"/>
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ean"
+        android:layout_toRightOf="@+id/ean"
+        android:layout_toEndOf="@+id/ean"
+        android:layout_marginLeft="@dimen/land_add_book_scan_marginstart"
+        android:layout_marginStart="@dimen/land_add_book_scan_marginstart"
+        android:text="@string/scan_button"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_button"
+        android:layout_alignLeft="@+id/ean"
+        android:layout_alignStart="@+id/ean"
+        android:layout_marginTop="@dimen/land_book_title_margintop"
+        android:layout_marginLeft="@dimen/land_book_title_marginstart"
+        android:layout_marginStart="@dimen/land_book_title_marginstart"
+        android:layout_marginRight="@dimen/land_book_title_marginend"
+        android:layout_marginEnd="@dimen/land_book_title_marginend"
+        android:textSize="@dimen/head_line"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        tools:text="Book Title"/>
+
+    <TextView
+        android:id="@+id/bookSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookTitle"
+        android:layout_alignLeft="@+id/bookTitle"
+        android:layout_alignStart="@+id/bookTitle"
+        android:layout_marginTop="@dimen/land_add_book_subtitle_margintop"
+        tools:text="Sub Title: A story about a story" />
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/land_book_cover_minheight"
+        android:minWidth="@dimen/land_book_cover_minwidth"
+        android:layout_below="@+id/bookSubTitle"
+        android:layout_alignLeft="@+id/bookSubTitle"
+        android:layout_alignStart="@+id/bookSubTitle"
+        android:contentDescription="@string/book_cover"
+        tools:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_add_book_authors_marginstart"
+        android:layout_marginStart="@dimen/land_add_book_authors_marginstart"
+        android:layout_alignTop="@+id/bookCover"
+        android:layout_toRightOf="@+id/bookCover"
+        android:layout_toEndOf="@+id/bookCover"
+        android:textSize="@dimen/text_size_micro"
+        tools:text="Reto Meier" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookCover"
+        android:layout_alignLeft="@+id/bookCover"
+        android:layout_alignStart="@+id/bookCover"
+        android:layout_marginTop="@dimen/land_add_book_margintop"
+        android:textSize="@dimen/text_size_micro"
+        tools:text="Adventure | Action" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/scan_button"
+        android:layout_toRightOf="@id/scan_button"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:contentDescription="@string/cancel_button"
+            android:src="@drawable/ic_action_discard"
+            tools:src="@drawable/abc_ic_clear_mtrl_alpha"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            style="?android:attr/buttonBarButtonStyle"
+            android:contentDescription="@string/ok_button"
+            android:text="@string/ok_button"
+            android:src="@drawable/ic_action_accept"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
