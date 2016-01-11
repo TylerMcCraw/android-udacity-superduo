@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Standard text sizes, per the Android Design guidelines.  -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_horizonal_matgin">2dp</dimen>
+    <dimen name="auto_adjust_zero_dp">0dp</dimen>
+
+    <dimen name="share_button_margin">150dp</dimen>
+    <dimen name="team_names">17sp</dimen>
+    <dimen name="score">30sp</dimen>
+    <dimen name="league">15sp</dimen>
+    <dimen name="scores_list_divider_height">15dp</dimen>
+    <dimen name="pager_header_paddingtop">4dp</dimen>
+    <dimen name="pager_header_paddingbottom">4dp</dimen>
+    <dimen name="detail_frag_header_margintop">20dp</dimen>
+    <dimen name="detail_frag_main_margintop">20dp</dimen>
+    <dimen name="share_button_paddingleft">120dp</dimen>
+    <dimen name="share_button_paddingright">120dp</dimen>
+    <dimen name="scores_list_item_elevation">4dp</dimen>
+    <dimen name="scores_list_item_main_paddingtop">5dp</dimen>
+    <dimen name="scores_list_item_main_paddingbottom">5dp</dimen>
+
+    <!-- Widget -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="widget_minheight">40dp</dimen>
+    <dimen name="widget_minwidth">40dp</dimen>
+    <dimen name="widget_minresizeheight">40dp</dimen>
+    <dimen name="widget_minresizewidth">40dp</dimen>
+    <dimen name="widget_header_padding">10dp</dimen>
+    <dimen name="widget_image_width">32dp</dimen>
+    <dimen name="widget_image_height">32dp</dimen>
+    <dimen name="widget_image_maxwidth">32dp</dimen>
+    <dimen name="widget_image_maxheight">32dp</dimen>
+    <dimen name="widget_header_text_marginstart">10dp</dimen>
+    <dimen name="widget_header_text_paddingbottom">4dp</dimen>
+    <dimen name="widget_header_text_paddingtop">4dp</dimen>
+</resources>
