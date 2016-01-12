@@ -92,20 +92,6 @@
                     android:gravity="end|top"
                     tools:text="Reto Meier"/>
             </LinearLayout>
-
-            <ImageButton
-                android:id="@+id/backButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|top"
-                android:layout_alignParentTop="true"
-                android:layout_alignRight="@+id/fullBookTitle"
-                android:layout_alignEnd="@+id/fullBookTitle"
-                android:contentDescription="@string/back_button"
-                android:onClick="goBack"
-                android:src="@drawable/ic_action_undo"
-                style="?android:attr/buttonBarButtonStyle" />
-
         </RelativeLayout>
     </ScrollView>
 
