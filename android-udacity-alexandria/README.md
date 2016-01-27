@@ -7,7 +7,6 @@ android-udacity-alexandria allows users to view a list of added books in a libra
 ## Credits
 
 Libraries
-ZXing: https://github.com/zxing/zxing
 
 ## License
 
